@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Tool Switch Demo</title>
+        <script type="text/javascript" src="../libs/require-jquery.min.js" data-main="slider.main"></script>
+    </head>
+    <body>
+        <div id="switch-holder">
+            <ul>
+                <li ><img src="images/expand_01.jpg">
+                </li>
+                <li ><img src="images/expand_02.jpg">
+                </li>
+                <li ><img src="images/expand_03.jpg">
+                </li>
+                <li ><img src="images/expand_04.jpg">
+                </li>
+                <li ><img src="images/expand_05.jpg">
+                </li>
+                <li ><img src="images/expand_06.jpg">
+                </li>
+            </ul>
+        </div>
+        <div id="prev-btn" class="btn">PREV</div>
+        <div id="next-btn" class="btn">NEXT</div>
+        <div id="switch-btns">
+            <ul>
+                <li >
+                </li>
+                <li >
+                </li>
+                <li >
+                </li>
+                <li >
+                </li>
+                <li >
+                </li>
+                <li >
+                </li>
+            </ul>
+        </div>
+        <style>
+			body {
+				margin: 0;
+			}
+			#switch-holder {
+				width: 320;
+				height: 200px;
+				overflow: hidden;
+			}
+
+			#switch-holder ul {
+				width: 600%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+
+			#switch-holder ul li {
+				width: 16.667%;
+				height: 100%;
+				float: left;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			#switch-holder ul li img {
+				width: 100%;
+			}
+
+			#switch-btns ul {
+				margin: 0;
+				padding: 0;
+			}
+
+			#switch-btns ul li {
+				margin: 5px;
+				padding: 0;
+				width: 20px;
+				height: 20px;
+				float: left;
+				list-style: none;
+				background: #dedede;
+			}
+
+			.btn {
+				width: 60px;
+				height: 30px;
+				background: #ff0000;
+				line-height: 30px;
+				cursor: pointer;
+				text-align: center;
+				margin-top: 10px;
+			}
+        </style>
+    </body>
+</html>

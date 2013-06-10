@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Tool Switch Demo</title>
+        <script type="text/javascript" src="../libs/require-jquery.min.js" data-main="tool.switch.main"></script>
+    </head>
+    <body>
+        <div id="switch-holder">
+            <div class="sub-holder">
+                <img src="images/expand_01.jpg">
+            </div>
+            <div class="sub-holder">
+                <img src="images/expand_02.jpg">
+            </div>
+            <div class="sub-holder">
+                <img src="images/expand_03.jpg">
+            </div>
+            <div class="sub-holder">
+                <img src="images/expand_04.jpg">
+            </div>
+            <div class="sub-holder">
+                <img src="images/expand_05.jpg">
+            </div>
+            <div class="sub-holder">
+                <img src="images/expand_06.jpg">
+            </div>
+        </div>
+        <div id="prev-btn" class="btn">
+            PREV
+        </div>
+        <div id="next-btn" class="btn">
+            NEXT
+        </div>
+        <style>
+			body {
+				margin: 0;
+			}
+			#switch-holder {
+				width: 500px;
+				height: 300px;
+				overflow: hidden;
+			}
+
+			#switch-holder ul {
+				width: 600%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+
+			#switch-holder ul li {
+				width: 16.667%;
+				height: 100%;
+				float: left;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			#switch-holder ul li img {
+				width: 100%;
+			}
+
+			.btn {
+				width: 60px;
+				height: 30px;
+				background: #ff0000;
+				line-height: 30px;
+				cursor: pointer;
+				text-align: center;
+				margin-top: 10px;
+			}
+			.sub-holder {
+				position: absolute;
+				display: none;
+			}
+        </style>
+    </body>
+</html>
